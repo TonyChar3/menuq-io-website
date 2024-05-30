@@ -12,7 +12,7 @@ export default function Footer() {
             height="10"
             className="w-[20%] h-[5%] md:h-[10%] lg:h-[80%] lg:w-[30%] my-2"
           />
-          <ul className="w-full my-2 flex flex-row justify-center items-start">
+          <ul className="w-full my-2 flex flex-row justify-center items-start flex-wrap">
             <FooterLink text="Home" link="/" onclick={() => null} />
             <FooterLink
               text="Product"
@@ -20,6 +20,7 @@ export default function Footer() {
               onclick={() => null}
             />
             <FooterLink text="About" link="/about" onclick={() => null} />
+            <FooterLink text="Contact" link="/contact" onclick={() => null} />
             <FooterLink text="Support" link="/support" onclick={() => null} />
           </ul>
         </div>

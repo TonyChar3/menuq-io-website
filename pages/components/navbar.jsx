@@ -26,7 +26,7 @@ export default function Navbar() {
                 onclick={() => null}
               />
               <NavLink text="About" link="/about" onclick={() => null} />
-              <NavLink text="Support" link="/support" onclick={() => null} />
+              <NavLink text="Contact" link="/contact" onclick={() => null} />
             </div>
             <div className="w-1 h-10 mx-6 bg-gray-300 rounded-lg"></div>
             <div className="flex flex-row justify-center items-center">
@@ -86,8 +86,8 @@ export default function Navbar() {
               onclick={() => setShowHamburger(false)}
             />
             <NavLink
-              text="Support"
-              link="/support"
+              text="Contact"
+              link="/contact"
               onclick={() => setShowHamburger(false)}
             />
           </ul>
