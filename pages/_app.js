@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Navbar />
-      <div className="h-full w-full overflow-y-auto overflow-x-hidden flex-grow">
+      <div className="h-full w-full flex-grow">
         <Component {...pageProps} />
         <Footer />
       </div>

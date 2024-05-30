@@ -5,7 +5,7 @@ export default function SupportOptionCard({ link, option, img }) {
     <>
       <Link
         href={link}
-        className="w-[50%] my-2 p-3 border border-gray-300 text-center rounded-lg shadow-md shadow-gray-400 active:scale-[0.90] hover:scale-[1.01] ease transition-all ease duration-300"
+        className="w-[50%] md:w-[30%] lg:w-[25%] my-2 md:my-4 p-3 border border-gray-300 text-center rounded-lg shadow-md shadow-gray-400 active:scale-[0.90] hover:scale-[1.01] ease transition-all ease duration-300"
       >
         <img
           src={img}

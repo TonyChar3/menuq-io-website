@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <motion.div
-        className="w-full lg:h-full pt-8 md:pt-10 pb-2 flex flex-col justify-center 2xl:justify-start items-center"
+        className="w-full lg:h-[95%] pt-8 md:pt-10 pb-2 flex flex-col justify-center 2xl:justify-start items-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0, transition: { duration: 0.1 } }}

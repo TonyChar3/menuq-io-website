@@ -1,14 +1,21 @@
 import ProductCard from "./components/product-card";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import RevealAnimation from "./animations/RevealAnimation";
+import ScrollToTop from "./components/scrolltoTop";
 
-export default function ProductSection() {
+export default function Billing() {
   const [active_billing, setActiveBilling] = useState("monthly");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
+      <ScrollToTop />
       <motion.div
-        className="md:h-[75%] lg:h-full flex flex-col justify-center items-center"
+        className="md:h-[75%] lg:h-full lg:pb-8 flex flex-col justify-center items-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0, transition: { duration: 0.1 } }}
@@ -50,6 +57,18 @@ export default function ProductSection() {
             price={10.0}
             billing={active_billing}
           />
+        </div>
+
+        {/* Message to user */}
+        <div className="hidden md:flex w-[65%] lg:w-[30%] mb-8 lg:mt-6 flex-row justify-center items-center">
+          <i class="bi bi-info-circle text-4xl mr-4 text-red-400"></i>
+          <div className="w-6 lg:w-8 h-[95%] bg-red-400 mr-4"></div>
+          <p className="lg:text-xl font-light">
+            Please note that for large businesses, please contact us to
+            negotiate a special package tailored to your specific needs. Our
+            team will work with you to create a customized solution that meets
+            your unique requirements and helps you achieve your goals.
+          </p>
         </div>
       </motion.div>
     </>

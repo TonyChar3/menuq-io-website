@@ -14,11 +14,8 @@ export default function Footer() {
           />
           <ul className="w-full my-2 flex flex-row justify-center items-start flex-wrap">
             <FooterLink text="Home" link="/" onclick={() => null} />
-            <FooterLink
-              text="Product"
-              link="/product-section"
-              onclick={() => null}
-            />
+            <FooterLink text="Product" link="/product" onclick={() => null} />
+            <FooterLink text="Billing" link="/billing" onclick={() => null} />
             <FooterLink text="About" link="/about" onclick={() => null} />
             <FooterLink text="Contact" link="/contact" onclick={() => null} />
             <FooterLink text="Support" link="/support" onclick={() => null} />

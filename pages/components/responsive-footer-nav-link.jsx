@@ -14,6 +14,7 @@ export default function FooterLink({ text, link, onclick }) {
       <Link
         href={link}
         onClick={onclick}
+        scroll={true}
         className={`${isActive ? "font-bold" : "font-light"}`}
       >
         {text}

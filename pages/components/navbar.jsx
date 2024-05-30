@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <>
       <div className="w-full">
-        <nav className="relative w-full p-2 flex justify-between items-center border-b border-gray-300 shadow-md shadow-gray-500">
+        <nav className="relative w-full p-2 bg-white flex justify-between items-center border-b border-gray-300 shadow-md shadow-gray-500">
           {/* Logo */}
           <Link href="/">
             <h1 className="px-2 font-bold text-2xl md:text-4xl md:py-2 lg:text-3xl lg:px-4">
@@ -20,11 +20,8 @@ export default function Navbar() {
           <ul className="hidden lg:flex flex-row justify-end items-center lg:w-[65%] transition-all ease duration-300">
             <div className="flex flex-row justify-center items-center">
               <NavLink text="Home" link="/" onclick={() => null} />
-              <NavLink
-                text="Product"
-                link="/product-section"
-                onclick={() => null}
-              />
+              <NavLink text="Product" link="/product" onclick={() => null} />
+              <NavLink text="Billing" link="/billing" onclick={() => null} />
               <NavLink text="About" link="/about" onclick={() => null} />
               <NavLink text="Contact" link="/contact" onclick={() => null} />
             </div>
@@ -77,7 +74,12 @@ export default function Navbar() {
             />
             <NavLink
               text="Product"
-              link="/product-section"
+              link="/product"
+              onclick={() => setShowHamburger(false)}
+            />
+            <NavLink
+              text="Billing"
+              link="/billing"
               onclick={() => setShowHamburger(false)}
             />
             <NavLink

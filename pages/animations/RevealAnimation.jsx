@@ -18,7 +18,6 @@ const RevealAnimation = ({ children, className }) => {
       <motion.div
         ref={ref}
         style={{
-          transform: isInView ? "none" : "translateX(200px)",
           opacity: isInView ? 1 : 0,
         }}
         className={`${className} transition-all ease duration-1000`}
